@@ -35,4 +35,8 @@ public class Produto {
 	public static void estaticoAtualizaPreco(Produto p) {
 		p.setPreco(p.getPreco()*1.1);
 	}
+	
+	public void atualizaPreco() {
+		preco = preco * 1.1;
+	}
 }
