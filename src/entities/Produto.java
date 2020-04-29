@@ -31,4 +31,8 @@ public class Produto {
 	public String toString() {
 		return "Produto [nome=" + nome + ", preco=" + String.format("%.2f",preco) + "]";
 	}
+	
+	public static void estaticoAtualizaPreco(Produto p) {
+		p.setPreco(p.getPreco()*1.1);
+	}
 }

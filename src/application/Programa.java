@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import entities.Produto;
-import util.AtualizaPreco;
 
 public class Programa {
 
@@ -16,7 +15,7 @@ public class Programa {
 		list.add(new Produto("Tablet", 350.50));
 		list.add(new Produto("HD Case", 80.90));
 		
-		list.forEach(new AtualizaPreco());
+		list.forEach(Produto::estaticoAtualizaPreco);
 		
 		list.forEach(System.out::println);
 	}
